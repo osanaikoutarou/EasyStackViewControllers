@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uV3-r6-gip">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="X6U-0G-VcN">
+            <objects>
+                <viewController storyboardIdentifier="DViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uV3-r6-gip" customClass="DViewController" customModule="EasyStackViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U85-lY-F01">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9UF-hg-F7O">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dc5-UX-VY4">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Da-Jc-zPr">
+                                                <rect key="frame" x="20" y="18" width="48" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.60784313729999995" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="9Da-Jc-zPr" firstAttribute="leading" secondItem="Dc5-UX-VY4" secondAttribute="leading" constant="20" id="JQT-Im-O7r"/>
+                                            <constraint firstAttribute="height" constant="60" id="NE5-Rg-vgF"/>
+                                            <constraint firstItem="9Da-Jc-zPr" firstAttribute="centerY" secondItem="Dc5-UX-VY4" secondAttribute="centerY" id="ngx-Zo-Hhe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Dc5-UX-VY4" firstAttribute="top" secondItem="9UF-hg-F7O" secondAttribute="top" id="2IL-2s-wCE"/>
+                                    <constraint firstItem="Dc5-UX-VY4" firstAttribute="leading" secondItem="9UF-hg-F7O" secondAttribute="leading" id="D2h-Th-NGf"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dc5-UX-VY4" secondAttribute="bottom" id="Wla-1b-VYK"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dc5-UX-VY4" secondAttribute="trailing" id="xrj-mb-3yA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="9UF-hg-F7O" secondAttribute="bottom" id="12x-fU-JFV"/>
+                            <constraint firstItem="Mfx-Xc-aXu" firstAttribute="trailing" secondItem="9UF-hg-F7O" secondAttribute="trailing" id="cxd-Ng-cHw"/>
+                            <constraint firstItem="9UF-hg-F7O" firstAttribute="leading" secondItem="Mfx-Xc-aXu" secondAttribute="leading" id="lEa-yB-bVl"/>
+                            <constraint firstItem="9UF-hg-F7O" firstAttribute="top" secondItem="U85-lY-F01" secondAttribute="top" id="riC-H9-mbW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mfx-Xc-aXu"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="60"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sli-7l-aS9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="450.72463768115944" y="-203.57142857142856"/>
+        </scene>
+    </scenes>
+</document>

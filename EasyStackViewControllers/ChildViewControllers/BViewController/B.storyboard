@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hqr-z1-1nf">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ncs-hE-d8G">
+            <objects>
+                <viewController storyboardIdentifier="BViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hqr-z1-1nf" customClass="BViewController" customModule="EasyStackViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gM4-hj-V3j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRX-Ef-xys">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower_tsutsuji_mitsu" translatesAutoresizingMaskIntoConstraints="NO" id="WNL-kV-FIm">
+                                        <rect key="frame" x="20" y="20" width="160" height="160"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="WNL-kV-FIm" secondAttribute="height" multiplier="1:1" id="0zQ-Qc-1X4"/>
+                                            <constraint firstAttribute="height" constant="160" id="bD2-0j-egq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lv-Uh-49f">
+                                        <rect key="frame" x="279" y="85" width="125" height="30"/>
+                                        <state key="normal" title="Toggle Image Size"/>
+                                        <connections>
+                                            <action selector="tapChangeImageSize:" destination="hqr-z1-1nf" eventType="touchUpInside" id="myb-t4-lVk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="WNL-kV-FIm" firstAttribute="top" secondItem="FRX-Ef-xys" secondAttribute="top" constant="20" id="GCB-ne-Mvj"/>
+                                    <constraint firstAttribute="bottom" secondItem="WNL-kV-FIm" secondAttribute="bottom" constant="20" id="MbR-Ef-K0J"/>
+                                    <constraint firstItem="1lv-Uh-49f" firstAttribute="centerY" secondItem="WNL-kV-FIm" secondAttribute="centerY" id="Nrs-Gl-dSM"/>
+                                    <constraint firstItem="WNL-kV-FIm" firstAttribute="leading" secondItem="FRX-Ef-xys" secondAttribute="leading" constant="20" id="Tft-Cg-IW1"/>
+                                    <constraint firstAttribute="trailing" secondItem="1lv-Uh-49f" secondAttribute="trailing" constant="10" id="VpW-MZ-527"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FRX-Ef-xys" firstAttribute="trailing" secondItem="3SZ-hV-xvJ" secondAttribute="trailing" id="4ag-yH-Qcf"/>
+                            <constraint firstItem="FRX-Ef-xys" firstAttribute="leading" secondItem="3SZ-hV-xvJ" secondAttribute="leading" id="LQU-4z-WWT"/>
+                            <constraint firstItem="FRX-Ef-xys" firstAttribute="top" secondItem="gM4-hj-V3j" secondAttribute="top" id="ZMi-nZ-zA5"/>
+                            <constraint firstAttribute="bottom" secondItem="FRX-Ef-xys" secondAttribute="bottom" id="g15-Yx-ivf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3SZ-hV-xvJ"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="200"/>
+                    <connections>
+                        <outlet property="imageHeightConstraint" destination="bD2-0j-egq" id="x0u-7r-ZQT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNA-0l-sIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="378" y="-218"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flower_tsutsuji_mitsu" width="355" height="400"/>
+    </resources>
+</document>

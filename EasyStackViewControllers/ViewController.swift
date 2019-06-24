@@ -9,24 +9,5 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var scrollView: UIScrollView! {
-        didSet {
-            scrollView.isScrollEnabled = true
-        }
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(viewDidTap(sender:)))
-        view.addGestureRecognizer(gesture)
-    }
-
-    @objc func viewDidTap(sender: Any) {
-        view.endEditing(true)
-    }
-
-
 }
 

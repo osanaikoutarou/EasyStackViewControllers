@@ -15,10 +15,7 @@ class AViewController: UIViewController {
         self.view.translatesAutoresizingMaskIntoConstraints = false
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBAction func tappedCloseKeyboard(_ sender: Any) {
+        view.endEditing(true)
     }
-
 }
